@@ -1,0 +1,119 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+body{
+	background-color: #eee;
+}
+h1, h2{
+	font-family: "paralucent", Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-style: italic;
+}
+h3,h4,p{
+	font-family: operetta-12, serif;
+	font-weight: 400;
+	font-style: normal;
+}
+p{
+	font-size: 16px;
+}
+
+input {
+  width: 100%;
+  font-size: 2em; 
+  display: block;
+  float: left;
+  clear: both;
+}
+
+h1{
+	font-size: 60px;
+	line-height: 1.15;
+	font-family: paralucent, sans-serif;
+	font-weight: 600;
+	font-style: italic;
+}
+li, a{
+	font-family: paralucent, sans-serif;
+	font-weight: 600;
+	font-style: italic;
+	color: #d9f9f1;
+}
+
+.col-md-12{
+	//min-height: 100vh;
+	padding-bottom: 15px;
+	//border-bottom: 3px #00D455 dashed;
+}
+
+#lead{
+	background-image: url('/img/people_workin_72.jpg');
+	background-size: cover;
+	//background-color:#81233D;
+	min-height: 75vh;
+	
+}
+#lead h1, h2, h3{
+	color: #d9f9f1;
+}
+
+.mint{
+	background-color: #d9f9f1;
+	color:#81233D;
+}
+.mint h1, h2, h3{
+	color:#81233D;
+}
+.claret{
+	background-color: #81233D;
+}
+.claret h1, h2, h3{
+	color: #d9f9f1;
+	background-color: none;
+	padding: 5px;
+}
+a{
+	color: black;
+	text-decoration:bold;
+}
+a:hover {
+		color: #01903A;
+		// text-decoration: none;
+	}
+a:selected{
+	text-decoration: none; 
+	color: #01903A;
+}
+
+.row{
+	display:inline-flex;
+	width: 100%;
+	flex-wrap: wrap;
+	margin:auto;
+	justify-content:center;
+}
+.navbar, .navbar-default, .navbar-nav, .navbar li, .navbar a{
+	background: #81233D;
+	margin-bottom:0px;
+	border:0px;
+	color: #d9f9f1;
+}
+
+.navbar-default .navbar-nav li a{
+	background: #81233D;
+	margin-bottom:0px;
+	border:0px;
+	color: #d9f9f1;
+}
+a:hover{
+	color: #d9f9f1;
+}
+a:visited{
+	color: #d9f9f1;
+}
+.navbar-brand{
+	width:120px;
+	padding: 10px;
+}

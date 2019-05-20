@@ -1,0 +1,29 @@
+---
+layout: default
+---
+ <div class="col-md-12">
+    <h1>{{ page.title }}</h1>
+    	<div class="col-md-10 col-md-offset-1">
+    {% if {{page.imgs}} %}
+    <img src="1.JPG" class="img-responsive" />
+    {% endif %} 
+    {{ content }}
+    {% if page.files %}
+    <h3 class="download"><a href="{{page.files}}">Download Source Files</a></h3>
+    <p>This work by <a xmlns:cc="http://creativecommons.org/ns#" href="situated.systems" property="cc:attributionName" rel="cc:attributionURL">Situated Systems</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+
+    {% endif %}
+
+    {% if page.imgs > 2 %}
+    <div class="row">
+    {% assign count = {{page.imgs | minus:1 }} %}
+    {% for i in (2..{{page.imgs}}) %}
+    <div class="col-md-{{ count }}">
+    	<img src="{{ i }}.JPG" class="img-responsive">
+    </div>
+	   {% endfor %}
+     {% else %}
+      <img src="2.JPG" class="img-responsive">
+    {% endif %}
+   </div>
+</div>
